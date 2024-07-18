@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --main-bg-color: rgb(15, 111, 201);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    height: 10vh;
+    background-color: var(--main-bg-color);
+    font-family: "Bona Nova SC", serif;
+}
+
+header {
+    /* position: fixed;
+    width: -moz-available;
+    z-index: 3; */
+    background-color: var(--main-bg-color);
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 23px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: "Bona Nova SC", serif;
+}
+
+nav ul li a:hover {
+    font-size: 30px;
+    color: rgb(0, 255, 119);
+    text-decoration: none;
+    font-family: "Bona Nova SC", serif;
+}
+
+nav ul {
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.container {
+    min-height: calc(100vh - 50px - 10vh);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 400px;
+    height: 20px;
+    padding: 8px;
+    margin: 0px 30px;
+    border-radius: 5px;
+
+}
+
+.search img {
+    position: relative;
+    left: -58px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+@keyframes slide1 {
+    0% {
+        transform: translate(-0vw);
+    }
+
+    50% {
+        transform: translate(101vw);
+
+    }
+
+    100% {
+        transform: translate(141vw);
+    }
+}
+
+
+@keyframes slide3 {
+    0% {
+        transform: translate(-107vw);
+    }
+
+    50% {
+        transform: translate(-10vw);
+
+    }
+
+    100% {
+        transform: translate(50vw);
+    }
+
+}
+
+.slider {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+.img1 {
+    transform: translate(0vw);
+    animation-name: slide1;
+    animation-duration: 8s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+
+.img3 {
+    transform: translate(-120vw);
+    animation-name: slide3;
+    animation-duration: 8s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+.card {
+   
+    padding-top: 50px;
+    background-color: rgb(255, 255, 255);
+    max-width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.lines {
+    font-size: 20px;
+    font-family: "Bona Nova SC", serif;
+    margin-left: 70px;
+}
+
+.card-items {
+    margin: 0px 30px;
+}
+
+.h {
+    margin-left: 97px;
+    position: relative;
+    top: 40px;
+}
+.bt{
+    display: flex;
+}
+.leftbt{
+    position: relative;
+    top: 198px;
+    left: 38px;
+    right: 0;
+    bottom: 0;
+}
+.rightbt{
+    position: relative;
+    top: 198px;
+    left: 1250px;
+    right: 0;
+    bottom: 0;
+}
+.bt :hover{
+    width: 32px;
+}
+.card :hover{
+    font-size: 30px;
+}
